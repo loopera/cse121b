@@ -1,7 +1,10 @@
+
+// HOW TO ADD CONTENT 
 const newParagraph = document.createElement("p");
 newParagraph.innerText = "Added with Javascript!";
 document.body.appendChild(newParagraph);
 
+// HOW TO ADD AN IMAGE
 const newImage = document.createElement("img");
 newImage.setAttribute("src", "https://picsum.photos/200");
 newImage.setAttribute("alt", "Description of image");

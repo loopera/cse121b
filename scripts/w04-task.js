@@ -25,14 +25,14 @@ let myProfile = {
 
 myProfile.placesLived.push(
     {
-        place: "United Kingdom",
+        place: "🏠United Kingdom",
         length: "8 years"
     }
 );
 
 myProfile.placesLived.push(
     {
-        place: "Philippines",
+        place: "🏠Philippines",
         length: "28 years"
     }
 );

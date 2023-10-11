@@ -32,7 +32,7 @@ const getTemples = async () => {
     displayTemples(templeList);
 };
 
-/* reset Function STEP 6 <<<<<<<NOT SO SURE>>>>>>>>*/
+/* reset Function */
 
 const reset = () => {
     const templesElement = document.getElementById("temples");

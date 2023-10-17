@@ -1,0 +1,57 @@
+/* Apply some basic styles to improve the visual appeal of the app */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weatherInfo {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#currentWeather {
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}

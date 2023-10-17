@@ -2,22 +2,31 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="project-styles.css">
-    <title>Weather Forecast App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 121b | Project: Weather App | Arianne Looper</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
 </head>
 
 <body>
-    <h1>Weather Forecast</h1>
-    <input type="text" id="locationInput" placeholder="Enter location">
-    <button id="submitBtn">Get Weather</button>
-    <div id="weatherInfo">
-        <h2>Current Weather</h2>
-        <p id="currentWeather"></p>
-        <h2>5-Day Forecast</h2>
-        <ul id="forecast"></ul>
+    <div class="container">
+        <h1>Weather App</h1>
+
+        <!-- Dropdown to select a city -->
+        <select id="citySelect"></select>
+
+        <!-- Button to get weather for the selected city -->
+        <button id="getWeatherButton">Get Weather</button>
+
+        <!-- Display weather information here -->
+        <div id="weatherInfo"></div>
     </div>
 
-    <script type="module" src="project-script.js"></script>
+    <!-- Include the external JavaScript file -->
+    <script src="script.js"></script>
+    <script src="weatherRecommendations.js"></script>
+
 </body>
 
 </html>

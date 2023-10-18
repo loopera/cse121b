@@ -1,4 +1,4 @@
-import cities from "./cities.js";
+import cities from "./project-cities.js";
 
 // Replace with your own OpenWeatherMap API key
 const apiKey = '7115d3e4427a2e9c252b2e76619572c2';

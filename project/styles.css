@@ -64,3 +64,13 @@ body {
     background-color: #fff;
     white-space: pre-line;
   }
+
+  footer {
+    background-color: #444;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}

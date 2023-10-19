@@ -1,76 +1,164 @@
 /* Add some improved CSS for styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: pink; 
-    margin: 0; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  background-color: #F6CACA;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* NAV styling */
+
+nav {
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+nav ul li {
+  flex: 1 1 auto;
+}
+
+nav ul li {
+  display: none;
+  list-style: none;
+  margin: 10px;
+}
+
+
+nav ul li:first-child {
+  display: block;
+  font-size: 2rem;
+}
+
+nav ul li:first-child a {
+  padding: 1px 10px;
+}
+
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul li a:hover {
+  background-color: #efefef;
+  color: black;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 32.5em) {
+  nav ul {
+    flex-direction: row;
   }
+
+  nav ul li:first-child {
+    display: none;
+  }
+
+  nav ul li {
+    display: block;
+  }
+
+}
+
+
+/* Container Styling */
 
 .container {
-    text-align: center;
-    padding: 20px;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  h1 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  #citySelect {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 20px;
-    margin-top: 10px;
-  }
-  
-  #getWeatherButton {
-    background-color: salmon;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s;
-  }
-  
-  #getWeatherButton:hover {
-    background-color: #0056b3;
-  }
-  
-  #weatherInfo {
-    font-size: 20px;
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    white-space: pre-line;
-  }
+  text-align: center;
+  padding: 20px;
+  background-color: #FAE8EB;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 
-  footer {
-    background-color: #444;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+h1 {
+  font-size: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #0A014F;
+  margin-bottom: 100px;
+}
+
+#citySelect {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 10px;
+
+}
+
+
+#getWeatherButton {
+  background-color: #CD9FCC;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #0A014F;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+#getWeatherButton:hover {
+  background-color: #0A014F;
+  color: white;
+}
+
+#weatherInfo {
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  white-space: pre-line;
+}
+
+/* Footer Styling */
+
+footer {
+  background-color: #444;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
